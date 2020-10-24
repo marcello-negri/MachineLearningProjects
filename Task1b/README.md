@@ -1,3 +1,3 @@
-## My Second Cross Validation Lasso + Ridge (final grade 6/6)
+## Lasso vs Ridge regression (final grade 6/6)
 
-This task is very similar to the previous one, with the exception that we perform the cross validation on two different types of regressor, namely RidgeRegressor and Lasso.
+In this task we touched with hands the differences between Lasso and Ridge regression and the resons why one method could be preferable over the other. In particular, we applied **feature generation** by applying transformation to the feature through several functions (constant, square, exponential, cosine). At this point we evaluated both regression models through cross validation and found out Lasso was more suited for our problem. Specifically to our problem, this is due to the fact that Lasso, by encouraging weights to be close to zero, performs feature selection automatically. The resulting weight vector had all zero entries apart from the feature obtained through the cosine function. Ridge regression, on the other hand, schrinked those values to small numbers which were nonetheless different from zero.
